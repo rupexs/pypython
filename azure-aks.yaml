@@ -13,9 +13,9 @@ spec:
         app: my-python-app
     spec:
       containers:
-      - name: mypythondockerrepo
-        image: acrmine.azurecr.io/repo/mypythondockerrepo:#{Build.BuildId}#
-        ports:
+      - name: rupexs
+        image: acrmine.azurecr.io/rupexs/pypython:latest:#{Build.BuildId}#
+        ports:  #
         - containerPort: 5000
 # service type loadbalancer       
 ---
