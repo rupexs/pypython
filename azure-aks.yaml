@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: rupexs
-        image: acrmine.azurecr.io/rupexs/pypython:latest:#{Build.BuildId}#
-        ports:  #
+        image: acrmine.azurecr.io/rupexs/pypython:#{Build.BuildId}#
+        ports:  
         - containerPort: 5000
 # service type loadbalancer       
 ---

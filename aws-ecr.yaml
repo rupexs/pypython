@@ -20,7 +20,7 @@ stages:
         awsCredentials: 'ecr_connection'
         regionName: $(AWS_REGION)
         imageSource: 'acrmine'
-        sourceImageName: $(acrmine.azurecr.io)
+        sourceImageName: $(acrmine.azurecr.io/rupexs/pypython)
         sourceImageTag: $(Build.BuildId)
         pushTag: latest
-        repositoryName: $(DOCKER_REPOSITORY_NAME)
+        repositoryName: $(acrmine)
