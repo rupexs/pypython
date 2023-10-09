@@ -19,8 +19,8 @@ stages:
       inputs:
         awsCredentials: 'ecr_connection'
         regionName: $(AWS_REGION)
-        imageSource: 'imagename'
-        sourceImageName: $(DOCKER_REPOSITORY_NAME)
+        imageSource: 'acrmine'
+        sourceImageName: $(acrmine.azurecr.io)
         sourceImageTag: $(Build.BuildId)
         pushTag: latest
         repositoryName: $(DOCKER_REPOSITORY_NAME)
